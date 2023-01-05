@@ -1,0 +1,381 @@
+*{
+    margin: 0%;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Rubik;
+}
+
+@font-face{
+    font-family: Rubik;
+    src: url(font/RubikMonoOne-Regular.ttf);
+}
+body{
+    background-image: url(image/teahub.io-himalaya-wallpaper-360442.jpg);
+    
+    background-size: 1540px 866.25px;
+    background-attachment: fixed;
+}
+
+.workkk{
+    background-image: url(image/yellow-orange-background-368120-pixahive.png);
+    background-size: 1540px 866.25px;
+    background-attachment: fixed;
+    color: azure;
+}
+
+.logo a{
+    position: absolute;
+    font-size: 70px;
+    top: 14px;
+    left: 5px;
+    color: aliceblue;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #08f,
+      0 0 82px #08f,
+      0 0 92px #08f,
+      0 0 102px #08f,
+      0 0 151px #08f;
+}
+
+.neonlight{
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px #08f,
+      0 0 82px #08f,
+      0 0 92px #08f,
+      0 0 102px #08f,
+      0 0 151px #08f;
+}
+
+.big{
+    font-size: 70px;
+    color: aliceblue;
+    
+}
+
+.big2{
+  font-size: 70px;
+  color: aliceblue;
+  grid-column: 1 / span 3;
+  display: grid;
+  justify-content: center;
+  
+}
+
+.barwrapper{
+    margin-top: 60px;
+    width: 1540;
+    height: 60px;
+    
+}
+
+.navbar1 li{
+    display: flex;
+    justify-content: space-between;
+    transition: 300ms;
+}
+
+.navbar1 li a {
+    
+    height: 60px;
+    width: 197px;
+    text-align: center;
+    justify-content: center; 
+    font-size: 27px;
+   font-family: Rubik;
+   color: white;
+   transition: 300ms;
+}
+
+.navbar1 li a p {
+  transition: 300ms;
+}
+
+.navbar1 li :hover{
+    color: rgb(71, 178, 255);
+    translate: 0 -6px;
+}
+
+.navabr li a{
+  transition: 300ms;
+}
+
+.navbar1 li a:nth-child(1){
+    background-color: aliceblue;
+    border-radius: 30px;
+    color: rgb(51, 51, 51);
+}
+
+.up{
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 660px;
+    left: 1430px;
+    border-radius: 25px;
+}
+
+.up p{
+    color: rgba(62, 45, 57, 0.737);
+    font-size: 50px;
+    text-align: center;
+}
+
+.up:hover{
+    translate: 0 -7px;
+    transition: 300ms;
+}
+
+.but{
+    border: 2px solid white;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 5px;
+    opacity: 0.8;
+    top: 60vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transition: .3s;
+}
+
+.but p{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.but:hover{
+  translate: 0 -7px;
+}
+
+.vv{
+  border-radius: 5px;
+}
+
+.ani{
+  width: 250px;
+  height: 50px;
+  position: absolute;
+}
+
+.wrapper{
+    width: 1000px;
+    position: absolute;
+    left: 18%;
+}
+
+.grid{
+    display: grid;
+    margin-top: 120px;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 16px;
+    z-index: 1;
+    grid-template-columns: 250px 250px 500px;
+    grid-template-rows: 190px 300px 375px 375px 100px 3000px 100px 800px 100px;
+}
+
+.grid2{
+    display: grid;
+    margin-top: 120px;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 30px;
+    z-index: 1;
+    grid-template-columns: 521px 410px;
+    grid-template-rows: 66px 300px 375px 375px 115px ;
+}
+
+.flip-card-front-wr >img,video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*o*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    perspective: 1000px; 
+    z-index: 20;
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    rotate: 10deg;
+  }
+
+  .flip-card-inner-wr {
+    position: relative;
+    width: 520px;
+    height: 300px;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+
+  .flip-card:hover .flip-card-inner-wr {
+    transform: rotateY(-180deg);
+  }
+
+  .flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front-wr, .flip-card-back-wr{
+    position: absolute;
+    width: 520px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  
+
+  .flip-card-front, .flip-card-front{
+    background-color: #bbb;
+    color: black;
+    border-radius: 15px;
+  }
+
+  .flip-card-front img{
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .flip-card-back, .flip-card-back-wr {
+    background-image: url(image/poster.jpg);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+  }
+
+  .a{
+    background-color: #2862bf56;
+    border-radius: 15px;
+    grid-column: 1 / span 2;
+    border: 2px solid white;
+  }
+
+  .c{
+    background-color: #ba28bf56;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+
+  .a h1, .c h1{
+    display: grid;
+    justify-content: center;
+    color: aliceblue;
+  }
+
+  .smi{
+    width: 100px;
+  }
+
+  .da{
+    width: 400px;
+    border-radius: 15px;
+  }
+
+  .codee{
+    width: 400px;
+    height: 227px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .butt1{
+    background-color: #88a7fb;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    transition: 300ms;
+  }
+
+  .butt1:hover{
+    translate: 0 -7px;
+  }
+
+  .b{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  
+  
+  .coco{
+    background: linear-gradient( 45deg, rgba(21, 87, 255, 0.68), rgba(128, 0, 128, 0.721));
+    grid-column: 1 / span 3;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .dede{
+    background: linear-gradient( 45deg, rgba(21, 87, 255, 0.68), rgba(128, 0, 128, 0.721));
+    grid-column: 1 / span 3;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .web{
+    grid-column: 1 / span 3;
+    color: aliceblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+  }
+
+  .coco {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coco img{
+    border-radius: 20px;
+  }
+
+  
